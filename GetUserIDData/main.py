@@ -1,9 +1,8 @@
-from library.module_anamaria import get_user_input
 
-def print_hi(name):
-    pass
-
+from library.module_cristian import *
 
 if __name__ == '__main__':
-    get_user_input("Pycarm")
+    print(get_name_verified("Introdu numele "))
+    print(get_cnp_verified("Introdu CNP"))
+    print("abababa")
 
