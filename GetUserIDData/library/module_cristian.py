@@ -1,5 +1,6 @@
 from .module_anamaria import get_user_input
-
+from module_elena import birthday_from_cnp
+from module_aidan import confirm_date
 
 def get_name_verified(message_to_user : str):
     """
@@ -23,8 +24,14 @@ def get_cnp_verified(message_to_user : str):
     while True:
         input_from_user = get_user_input(message_to_user)
         if input_from_user.isnumeric():
+
             if len(input_from_user) == 13:
-                break
+                birthday_as_tuple = birthday_from_cnp(input_from_user)
+                if confirm_date(birthday_as_tuple) is True:
+                    #TODO:modify  is_birthday_in_range(birthday_as_date) to take parameter as string
+                    break
+                else:
+                    continue
             else:
                 continue
         else:
