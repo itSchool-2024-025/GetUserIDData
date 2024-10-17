@@ -1,0 +1,1 @@
+from library.module_cristian import get_cnp_verified, get_name_verified

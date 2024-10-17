@@ -1,5 +1,5 @@
-from module_elena import birthday_from_cnp
-from module_anamaria import get_user_input
+from library.module_elena import birthday_from_cnp
+from library.module_anamaria import get_user_input
 
 #Task7: Ask the user to confirm the deduced date of birth from CNP, but have the date formated, beautified, so that
 # it follow the pattern "DD.MM.YYYY". - Aidan

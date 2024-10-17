@@ -1,6 +1,6 @@
-from .module_anamaria import get_user_input
-from module_elena import birthday_from_cnp
-from module_aidan import confirm_date
+from library.module_anamaria import get_user_input
+from library.module_elena import birthday_from_cnp
+from library.module_aidan import confirm_date
 
 def get_name_verified(message_to_user : str):
     """
