@@ -28,7 +28,7 @@ def get_cnp_verified(message_to_user : str):
             if len(input_from_user) == 13:
                 birthday_as_tuple = birthday_from_cnp(input_from_user)
                 if confirm_date(birthday_as_tuple) is True:
-                    #TODO:modify  is_birthday_in_range(birthday_as_date) to take parameter as string
+                    is_birthday_in_range(input_from_user)
                     break
                 else:
                     continue
