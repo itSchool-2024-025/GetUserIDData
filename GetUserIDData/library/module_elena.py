@@ -20,23 +20,16 @@ def birthday_from_cnp(param_cnp):
     birthday_as_tuple = (year, month, day)
     return birthday_as_tuple
 
-def mockup_function():
-    """
-    Mockup function
-    :return: Birthday in date format
-    """
-    from datetime import date
-    year, month, day = birthday_from_cnp(param_cnp)
-    birthday_as_date = date(year, month, day)
-    return birthday_as_date
 
-def is_birthday_in_range(birthday_as_date):
+def is_birthday_in_range(param_cnp):
     """
     Check if birthday is in a given range.
     :return: Birthday message
     """
     from datetime import date, timedelta
     today = date.today()
+    year, month, day = birthday_from_cnp(param_cnp)
+    birthday_as_date = date(year, month, day)
 
     start_range = today - timedelta(days=7)
     end_range = today + timedelta(days=7)
@@ -52,6 +45,6 @@ def is_birthday_in_range(birthday_as_date):
 
 
 if __name__ == '__main__':
-    param_cnp = '2960120000000'
+    param_cnp = '2961020000000'
     print(birthday_from_cnp(param_cnp))
-    print(is_birthday_in_range(mockup_function()))
+    print(is_birthday_in_range(param_cnp))
