@@ -1,6 +1,7 @@
-from library.module_anamaria import get_user_input
-from library.module_elena import birthday_from_cnp
-from library.module_aidan import confirm_date
+from .module_anamaria import get_user_input
+from .module_elena import birthday_from_cnp
+from .module_elena import is_birthday_in_range
+from .module_aidan import confirm_date
 
 def get_name_verified(message_to_user : str):
     """
@@ -39,6 +40,17 @@ def get_cnp_verified(message_to_user : str):
 
     return input_from_user # task 2.2
 
+# ToDo: rebuild function using regex to verify input from user
+def get_address_verified(message_to_user : str):
+    """
+    :param message_to_user: string
+    :return: the first name from user
+    """
+    input_from_user = ''
+
+    input_from_user = get_user_input(message_to_user)
+
+    return input_from_user.upper() #task 2.4 and 2.3
 
 if __name__ == '__main__':
 
