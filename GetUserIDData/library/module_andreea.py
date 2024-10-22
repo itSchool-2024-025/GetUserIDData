@@ -2,7 +2,7 @@
 #Read data from a text file
 def read_from_text_file(filepath):
     with open(filepath, "r") as file:
-        return file.read()
+        check_fields(file.read())
 
 
 #Check if file.txt contains the required fields

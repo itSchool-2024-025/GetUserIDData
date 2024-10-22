@@ -1,7 +1,7 @@
 import csv
 import os
 
-def save_to_files(firstName, lastName, birthDate, address, cnp):
+def save_to_files(firstName, lastName, birthDate="01.01.1900", address="", cnp=""):
     text_file = "id_details.txt"
     csv_file = "id_details.csv"
     with open(text_file, "a") as txt_file:  # 'a' pentru append
